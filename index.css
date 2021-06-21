@@ -1,0 +1,103 @@
+body {  
+    margin-top: 0px;
+    max-width: 1440px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    background-color:hsl(222, 26%, 31%);
+}
+
+.input {
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: large;
+    text-align: right;
+    padding-left: 10px;
+    background-color: hsl(224, 36%, 15%);
+}
+
+.btn {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    justify-content: center;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.btn1 {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn2 {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn3 {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn4 {
+    border-radius: 10px;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.btn4 > .del {
+    color: whitesmoke;
+    background-color: hsl(225, 21%, 49%);
+    border-color: hsl(224, 28%, 35%);
+}
+
+.btn5 {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn5 > .equal {
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    color: whitesmoke;
+    background-color: hsl(6, 63%, 50%);
+    border-color: hsl(6, 70%, 34%);
+}
+
+input[type=button] {
+    border-radius: 6px;
+    width: 50px;
+    height: 30px;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    border-color: hsl(28, 16%, 65%);
+}
+
+input[type=reset] {
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Spartan', sans-serif;
+    color: whitesmoke;
+    background-color: hsl(225, 21%, 49%);
+    border-color: hsl(224, 28%, 35%);
+}

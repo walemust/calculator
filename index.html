@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+    </style>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="body">
+  <div>
+    <form class="calc" name="calculator">
+      <input class="input" type="text" name="ans" value="">
+      <div class="btn">
+        <div class="btn4">
+          <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+          <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+          <input type="button" value="9" onClick="document.calculator.ans.value+='9'">   
+          <input class="del" type="button" value="DEL" onClick="document.calculator.ans.value = document.calculator.ans.value.substring(0, document.calculator.ans.value.length - 1)" >
+        </div>
+        <div class="btn2">
+          <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+          <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+          <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+          <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+        </div>
+        <div class="btn1">
+          <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+          <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+          <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+          <input type="button" value="-" onClick="document.calculator.ans.value+='-'"> 
+        </div>
+        <div class="btn3">
+          <input type="button" value="." onClick="document.calculator.ans.value+='.'">
+          <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+          <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+          <input type="button" value="x" onClick="document.calculator.ans.value+='*'">
+        </div>
+        <div class="btn5">
+          <input type="reset" value="RESET">
+          <input class="equal" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mustapha Olawale</a>.
+  </div>
+</body>
+</html>
