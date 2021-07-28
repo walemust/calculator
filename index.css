@@ -13,6 +13,17 @@ body {
     background-color:hsl(222, 26%, 31%);
 }
 
+.top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.h4,h6 {
+    color: whitesmoke;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 .input {
     border: 1px solid gray;
     border-radius: 6px;
