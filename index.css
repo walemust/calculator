@@ -84,7 +84,7 @@ body {
     padding: 5px;
 }
 
-.btn5 > .equal {
+.btn5 > .equal-sign-operator {
     border-radius: 6px;
     width: 100px;
     height: 30px;
@@ -93,7 +93,7 @@ body {
     border-color: hsl(6, 70%, 34%);
 }
 
-input[type=button] {
+button[type=button] {
     border-radius: 6px;
     width: 50px;
     height: 30px;
@@ -103,7 +103,7 @@ input[type=button] {
     border-color: hsl(28, 16%, 65%);
 }
 
-input[type=reset] {
+button[type=reset] {
     border-radius: 6px;
     width: 100px;
     height: 30px;
