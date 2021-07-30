@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head role="documentation">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -17,14 +17,14 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="body">
+<body class="body" role="main">
   <div>
     <form class="calc" name="calculator" aria-label="calculator">
       <div class="top">
       <h4 class="h4">
         calc
       </h4>
-      <h6 class="h6">THEME</h6>
+      <h5 class="h5">THEME</h5>
     </div>
       <input class="input" type="text" name="ans" value="" aria-label="textbox">
       <div class="btn">
@@ -61,24 +61,12 @@
   </div>
 
   
-  <div class="attribution">
+  <div class="attribution" role="contentinfo">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mustapha Olawale</a>.
   </div>
 
-  <script type="text/javascript" src="index.js"></script>
+  <script src="index.js"></script>
 
-  <!-- <script>
-    let input = document.querySelector(".input");
-    let total = document.querySelector(".equal");
-
-
-    input.addEventListener("keyup", function (e) {
-      e.preventDefault();
-      if (e.keyCode === 13) {
-        total.click(); 
-      }
-    });
-  </script> -->
 </body>
 </html>
