@@ -78,7 +78,7 @@ function calculate(firstOperand, secondOperand, operator) {
 }
 
 function del() {
-    let input = document.getElementsByClassName(".input");
+    let input = document.getElementsByClassName("input");
     input.value = input.value.slice(0, input.value.lenght - 1);
 }
 
