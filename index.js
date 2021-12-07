@@ -77,6 +77,11 @@ function calculate(firstOperand, secondOperand, operator) {
     return secondOperand;
 }
 
+function del() {
+    let input = document.getElementsByClassName("input");
+    input.value = input.value.slice(0, input.value.lenght - 1);
+}
+
 function resetCalculator() {
     calculator.displayValue = '0';
     calculator.firstOperand = null;
@@ -86,7 +91,6 @@ function resetCalculator() {
 
 function updateDisplay() {
     const display = document.querySelector('.input');
-
     display.value = calculator.displayValue;
 }
 
@@ -117,6 +121,9 @@ keys.addEventListener('click', (e) => {
             break;
         case 'all-clear':
             resetCalculator();
+            break;
+        case "DEL":
+            del();
             break;
         default:
             // check if the key is an integer
