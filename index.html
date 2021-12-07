@@ -32,7 +32,7 @@
           <button type="button" value="7">7</button>
           <button type="button" value="8">8</button>
           <button type="button" value="9">9</button>   
-          <button class="del" type="button" value="DEL" onClick="del()" >DEL</button>
+          <button class="del" type="button" value="DEL" onClick="document.calculator.ans.value = document.calculator.ans.value.substring(0, document.calculator.ans.value.length - 1)" >DEL</button>
         </div>
         <div class="btn2">
           <button type="button" value="4">4</button>
