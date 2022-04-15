@@ -109,7 +109,6 @@ function updateDisplay() {
     const display = document.querySelector(".input");
     display.value = calculator.displayValue;
   } else {
-    console.log("hfhfhdh", calculator.displayValue);
     const display = document.querySelector(".input");
     display.value = newData;
   }
@@ -129,7 +128,6 @@ keys.addEventListener("click", (e) => {
     return;
   }
 
-  console.log(value);
   switch (value) {
     case "+":
     case "-":
