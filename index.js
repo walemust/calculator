@@ -9,7 +9,7 @@ const calculator = {
 
 let newData = "";
 
-function inputDigit(digit) {
+inputDigit = (digit) => {
   const { displayValue, waitingForSecondOperand } = calculator;
 
   if (waitingForSecondOperand === true) {
@@ -21,9 +21,9 @@ function inputDigit(digit) {
   }
 
   console.log(calculator);
-}
+};
 
-function inputDecimal(dot) {
+inputDecimal = (dot) => {
   //If the `displayValue` property does not contain a decimal point
   if (calculator.waitingForSecondOperand === true) {
     calculator.displayValue = "0.";
@@ -36,16 +36,16 @@ function inputDecimal(dot) {
     calculator.displayValue += dot;
   }
   console.log(calculator);
-}
+};
 
-function removeDigit(deleted) {
+removeDigit = () => {
   if (calculator.firstOperand === true) {
     calculator.waitingForSecondOperand = false;
     return;
   }
-}
+};
 
-function handleOperator(nextOperator) {
+handleOperator = (nextOperator) => {
   //Destructure the properties on the calculator object
   const { firstOperand, displayValue, operator, deleted } = calculator;
   //`parseFloat` converts the string contents of `displayValue`
@@ -72,9 +72,9 @@ function handleOperator(nextOperator) {
   calculator.waitingForSecondOperand = true;
   calculator.operator = nextOperator;
   console.log(calculator);
-}
+};
 
-function calculate(firstOperand, secondOperand, operator) {
+calculate = (firstOperand, secondOperand, operator) => {
   if (operator === "+") {
     return firstOperand + secondOperand;
   } else if (operator === "-") {
@@ -99,7 +99,7 @@ function calculate(firstOperand, secondOperand, operator) {
     return Math.log(firstOperand);
   }
   return secondOperand;
-}
+};
 
 radToDeg = (radians, formula) => {
   // console.log("before pi ", radians);
@@ -207,31 +207,35 @@ radian = () => {
   }
 };
 
-function per() {
+per = () => {
   calculator.displayValue = calculator.displayValue / 100;
-}
+};
 
-function pi() {
+pi = () => {
   calculator.displayValue = calculator.displayValue * Math.PI;
-}
+};
 
-function log() {
+log = () => {
   calculator.displayValue = Math.log10(calculator.displayValue);
-}
+};
 
-function ln() {
+ln = () => {
   calculator.displayValue = Math.log(calculator.displayValue);
-}
+};
 
-function pow() {
-  calculator.displayValue = Math.pow(calculator.displayValue);
-}
+pow = () => {
+  calculator.displayValue = Math.pow(calculator.displayValue, 2);
+};
 
-function sqrt() {
+sqrt = () => {
   calculator.displayValue = Math.sqrt(calculator.displayValue, 2);
-}
+};
 
-function del() {
+cbrt = () => {
+  calculator.displayValue = Math.cbrt(calculator.displayValue, 3);
+};
+
+del = () => {
   //   calculator.displayValue = calculator.nextOperator.slice(0, -1);
   let input = document.getElementsByClassName("input")[0].value;
 
@@ -240,16 +244,16 @@ function del() {
 
   //   onClick =
   //     "document.calculator.ans.value = document.calculator.ans.value.substring(0, document.calculator.ans.value.length - 1)";
-}
+};
 
-function resetCalculator() {
+resetCalculator = () => {
   calculator.displayValue = "0";
   calculator.firstOperand = null;
   calculator.waitingForSecondOperand = false;
   calculator.operator = null;
-}
+};
 
-function updateDisplay() {
+updateDisplay = () => {
   if (newData === "") {
     const display = document.querySelector(".input");
     display.value = calculator.displayValue;
@@ -257,7 +261,7 @@ function updateDisplay() {
     const display = document.querySelector(".input");
     display.value = newData;
   }
-}
+};
 
 updateDisplay();
 
